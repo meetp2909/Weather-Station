@@ -1,5 +1,7 @@
 namespace weathersystemlibrary
 {
+
+    // Defined class which implement interface and show weather forecast information  
     public class ForecastDisplay : IDisplay
     {
         private WeatherData weatherData;
@@ -7,13 +9,12 @@ namespace weathersystemlibrary
         public ForecastDisplay(WeatherData weatherData)
         {
             this.weatherData = weatherData;
-            // Subscribe to weatherData's events
         }
 
+//  Execution of this method display weather forecast
         public void Display()
         {
             Console.WriteLine("Weather Forecast:");
-            // Implement logic to generate and display weather forecast
             Console.WriteLine("Sunny with a chance of clouds");
             Console.WriteLine();
         }

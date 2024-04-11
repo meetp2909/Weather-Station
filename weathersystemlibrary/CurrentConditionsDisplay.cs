@@ -1,7 +1,7 @@
 namespace weathersystemlibrary
 {
 
-    //  Defined class with name of file which implement the interface IDisplay
+    //  Defined class with the name of file which implement the interface IDisplay
     public class CurrentConditionsDisplay : IDisplay
     {
         private WeatherData weatherData;
