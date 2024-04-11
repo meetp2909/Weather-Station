@@ -1,3 +1,4 @@
+using weathersystemlibrary.Interface;
 namespace weathersystemlibrary
 {
     // Defined  a class named StatisticsDisplay which implements the IDisplay interface.

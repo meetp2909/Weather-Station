@@ -1,4 +1,6 @@
+using weathersystemlibrary.Interface;
 namespace weathersystemlibrary
+
 {
 
     //  Defined class with the name of file which implement the interface IDisplay

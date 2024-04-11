@@ -1,3 +1,4 @@
+using weathersystemlibrary.Interface;
 namespace weathersystemlibrary
 {
     // Defined the WeatherStation class responsible for creating display objects.

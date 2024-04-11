@@ -1,4 +1,4 @@
-﻿using weathersystemlibrary.Interface
+﻿using weathersystemlibrary.Interface;
 namespace weather_app
 {
 //  Define class with name of file

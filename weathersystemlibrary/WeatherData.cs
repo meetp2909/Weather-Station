@@ -5,9 +5,9 @@ namespace weathersystemlibrary
     {
         // Defined a private static nullable instance variable.
         private static WeatherData? instance;
-        // Declaration of a private Random object for generating random values.
+        // Defined a private Random object for generating random values.
         private Random random;
-        // Declaration of a private List<int> to store temperature history.
+        // Defined a private List<int> to store temperature history.
         private List<int> temperatureHistory;
 
         // Private constructor to initialize the random object and temperature history list.
