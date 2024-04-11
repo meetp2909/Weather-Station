@@ -1,5 +1,7 @@
 namespace weathersystemlibrary
 {
+
+    //  Defined class with name of file which implement the interface IDisplay
     public class CurrentConditionsDisplay : IDisplay
     {
         private WeatherData weatherData;
@@ -8,6 +10,8 @@ namespace weathersystemlibrary
         {
             this.weatherData = weatherData;
         }
+
+        // Executing method to show temp, humidity, wind 
         public void Display()
         {
             Console.WriteLine("Current Weather Conditions:");

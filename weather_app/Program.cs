@@ -1,26 +1,28 @@
-﻿namespace weather_app
+﻿using weathersystemlibrary.Interface
+namespace weather_app
 {
+//  Define class with name of file
     class Program
     {
         static void Main(string[] args)
         {
             WeatherStation weatherStation = new WeatherStation();
 
-            // Create display objects
-            IDisplay CurrentConditionsDisplay = WeatherStation.CreateDisplay("CurrentConditions");
-            IDisplay StatisticsDisplay = WeatherStation.CreateDisplay("Statistics");
-            IDisplay ForecastDisplay = WeatherStation.CreateDisplay("Forecast");
+            // Creating display objects
+            IDisplay currentConditionsDisplay = weatherStation.CreateDisplay("CurrentConditions");
+            IDisplay statisticsDisplay = weatherStation.CreateDisplay("Statistics");
+            IDisplay forecastDisplay = weatherStation.CreateDisplay("Forecast");
 
-            // Update weather data multiple times to generate temperature history
+            // Update weather data numerous time 
             for (int i = 0; i < 10; i++)
             {
                 WeatherData.Instance.UpdateWeatherData();
             }
 
             // Display weather data
-            CurrentConditionsDisplay.Display();
-            StatisticsDisplay.Display();
-            ForecastDisplay.Display();
+            currentConditionsDisplay.Display();
+            statisticsDisplay.Display();
+            forecastDisplay.Display();
         }
     }
 }
